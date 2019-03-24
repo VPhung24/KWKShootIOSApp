@@ -36,14 +36,15 @@ class ViewController: UIViewController {
     let wWhat = UIColor(displayP3Red: 14.0/255.0, green: 114.0/255.0, blue: 199.0/255.0, alpha: 1);
     
     func reset() {
-        FourPM.backgroundColor = Bblue;
-        Noon.backgroundColor = Ggreen;
-        EightPM.backgroundColor = Yyellow;
         EightAM.backgroundColor = Ppurple;
+        Noon.backgroundColor = Ggreen;
+        FourPM.backgroundColor = Bblue;
+        EightPM.backgroundColor = Yyellow;
+        
         EightAM.setTitleColor(UIColor.white, for: .normal);
+        Noon.setTitleColor(UIColor.white, for: .normal);
         FourPM.setTitleColor(UIColor.white, for: .normal);
         EightPM.setTitleColor(UIColor.white, for: .normal);
-        Noon.setTitleColor(UIColor.white, for: .normal);
         label1.textColor = UIColor.white;
     }
     
@@ -58,27 +59,27 @@ class ViewController: UIViewController {
     }
     @IBAction func eightAMAction(_ sender: Any) {
         reset();
+        EightAM.backgroundColor = UIColor.black;
+        label1.text = "Hair and Makeup + Shooting";
     }
     @IBAction func noonAction(_ sender: Any) {
+        reset();
+        Noon.backgroundColor = UIColor.black;
+        label1.text = "Lunch";
     }
     
     @IBAction func FourPMAction(_ sender: Any) {
+        reset();
+        FourPM.backgroundColor = UIColor.black;
+        label1.text = "Shooting";
     }
     
     @IBAction func EightPMAction(_ sender: Any) {
+        reset();
+        EightPM.backgroundColor = UIColor.black;
+        label1.text = "Homework";
+
     }
 }
-//        if (!x) {
-//            self.view.backgroundColor = UIColor(displayP3Red: 255.0/255.0, green: 149.0/255.0, blue: 0.0/255.0, alpha: 1);
-//            x = true;
-//
-//        }
-//        if (i == 3) {
-//            self.view.backgroundColor = UIColor(displayP3Red: 255.0/255.0, green: 59.0/255.0, blue: 48.0/255.0, alpha: 1);
-//            i = i + 1;
-//        }
-        
-        // this is a cute color "displayP3Red: 14.0/255.0, green: 114.0/255.0, blue: 199.0/255.0, alpha: 1"
-
 
 
